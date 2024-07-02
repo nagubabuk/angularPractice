@@ -1,0 +1,12 @@
+<p>test works!</p>
+<div>
+    <h1 *ngIf="ishow">Product List</h1>
+    <ul>
+        <ng-container *ngFor="let product of productList">
+            <li style="display: flex;">
+                <div style="margin: 4px;">{{ product.name }}</div>
+                <div><button (click)="GotoCart(product)">Add</button></div>
+            </li>
+        </ng-container>
+    </ul>
+</div>
