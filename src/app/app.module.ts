@@ -9,6 +9,9 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
+import { PieChartComponent } from './modules/dashboard/pie-chart/pie-chart.component';
+// import { ProductsModule } from './modules/products/products.module';
+// import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 
 @NgModule({
@@ -17,12 +20,15 @@ import { AdminComponent } from './admin/admin.component';
     TestComponent,
     LoginComponent,
     HomeComponent,
-    AdminComponent
+    AdminComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule ,
+    // ProductsModule,
+    // DashboardModule
   ],
   providers: [Appservice],
   bootstrap: [AppComponent]
